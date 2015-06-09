@@ -1,0 +1,61 @@
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+\secretlevel{1} \secretyear{2100}
+
+\ctitle{纯探寻组合多选择赌博机的近似算法与不可近似性}
+% 根据自己的情况选，不用这样复杂
+\makeatletter
+\ifthu@bachelor\relax\else
+  \ifthu@doctor
+    \cdegree{工学学士}
+  \else
+    \ifthu@master
+      \cdegree{工学硕士}
+    \fi
+  \fi
+\fi
+\makeatother
+
+
+\cdepartment[计算机]{交叉信息研究院}
+\cmajor{计算机科学与技术}
+\cauthor{谭子涵}
+\csupervisor{李建助理教授}
+% 如果没有副指导老师或者联合指导老师，把下面两行相应的删除即可。
+% 日期自动生成，如果你要自己写就改这个cdate
+%\cdate{\CJKdigits{\the\year}年\CJKnumber{\the\month}月}
+
+\etitle{Approximation Algorithms and Impossibility Results for Combinatorial Pure Exploration of Multi-Armed Bandit}
+% \edegree{Doctor of Science}
+\edegree{Bachelor of Engineering}
+\emajor{Computer Science and Technology}
+\eauthor{Zihan Tan}
+\esupervisor{Assistant Professor Jian Li}
+% 这个日期也会自动生成，你要改么？
+% \edate{December, 2005}
+
+% 定义中英文摘要和关键字
+\begin{cabstract}
+随着大数据时代的到来，信息处理的速度与量级需求都有本质的提高，因此在线优化方面涌现出很多有代表性并且颇具难度的问题。多选择赌博机便是其中的重要问题，求解这个问题代表着玩家要在学习未知的分布的同时操纵最优的赌博机选择（为了提升自己的收益），在两者之间达到一个平衡。这一里程碑性质的问题引来了大量研究与变形，应用甚为广泛。
+
+组合多选择赌博机问题，是将组合问题融入赌博机问题的重要框架。玩家每一次不是简单地尝试一个选择而是要尝试一个选择组合，使得这个选择在满足某种组合条件的情况下，根据他已有的知识最大化他的收益。也就是说，玩家每做一次选择，就是解一个组合问题的过程，然而参数事先给定但玩家并不了解，而是要在不断选择并得到新的知识后增加对参数的了解从而最优化后面的选择。
+
+本文中，我们研究组合多选择赌博机的“纯探寻”问题，即我们并不要求优化总收益，而是把目标定在输出最优的选择组合上。这个目标离不开对于相应的组合优化问题的求解，同时对于不同难度的优化问题我们能够输出选择组合的最优性也有着不同的要求。我们研究输出理论可能的最优组合的近似算法和不可近似性。应用的技巧是概率论的基本知识以及算法设计与分析。
+
+\end{cabstract}
+
+\ckeywords{赌博机；在线优化；近似算法；}
+
+\begin{eabstract}
+With the rising of big data, our requirement for speed and volume of data processing has increased extensively. Online learning, as a representative class of problems, has captured much attention in theoretical analysis. Multi-armed bandit is an important problem in online learning and has been well-studied in recent years. It needs the player to maintain a balance between exploration and exploitation.
+
+Combinatorial multi-armed bandit is a combination of combinatorial optimization and multi-armed bandit, in which the player tries a combination of arms (called a super arm) rather than one base arm as usual, so that his reward is optimized based on his previous knowledge on arms. In each round the player is indeed solving a combinatorial optimization problem, where the parameter is not given in the beginning, but needs to be learned by the player from previous rounds.
+
+
+In this thesis, we studied the pure exploration problem, whose goal is not maximizing the accumulative reward or minimizing the regret, but maximizing the probability that the algorithm outputs the ground-truth optimal solution. For different combinatorial problems we can have different objectives towards them. We focused on designing approximation algorithms and proving hardness results of the problem. Techniques including basic probability theory and algorithm design are utilized.
+\end{eabstract}
+
+\ekeywords{Multi-armed bandit；online optimization；approximation algorithm}

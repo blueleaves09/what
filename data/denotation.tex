@@ -1,0 +1,31 @@
+%!TEX root = /../main.tex
+
+\begin{denotation}
+
+\item[IM] 网络扩散最大化（Influence Maximization）
+\item[RIM] 鲁棒性网络扩散最大化（Robust Influence Maximization）
+\item[IC] 独立级联模型（Independent Cascade Model）
+\item[LT] 线性阈值模型（Linear Threshold Model）
+\item[G=(V,E)] 图
+\item[V]	点集
+\item[E]	边集
+\item[n]	点个数
+\item[m]	边个数
+\item[k]	种子集合大小
+\item[$p_e$]	边$e$上的真实概率
+\item[$\theta=\{\theta_e\}_{e\in E}$] 边$e$概率为$\theta_e$下的边参数   
+\item[$S_{\theta}^g$]  	在边参数$\theta$下，贪心算法得到的种子集合
+\item[$S_{\theta}^*$] 在边参数$\theta$下，使得影响力最大的种子集合
+\item[$\sigma_{\theta}(S)$] 在边参数$\theta$下，种子集合$S$的期望影响力
+\item[$\Theta$] 参数空间
+\item[$l_e$]    边$e$在参数空间下的概率值下限 
+\item[$r_e$] 边$e$在参数空间下的概率值上限 
+\item[$\theta^-$] 所有边取概率值下限时的边参数
+\item[$\theta^+$] 所有边取概率值上限时的边参数
+\item[$\mathcal{M}$] 取样结果
+\item[$M_e$]    边$e$的取样结果
+\item[$t_e$]    边$e$的取样次数
+\item[$\gamma$] 准确度要求
+\item[$\tau_1,\tau_2,\tau_3$]   取样算法的参数
+\item[$\kappa$] 迭代算法停止阈值
+\end{denotation}
